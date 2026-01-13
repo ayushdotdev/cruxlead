@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap');
 
+$bg-dark: #0b0f14;
+$bg-primary: #141922;
+$accent: #2563eb;
+
+
 * {
   padding: 0;
   margin: 0;
@@ -10,19 +15,19 @@ body {
   width: 100vw;
   font-family: 'Geist';
   height: 100vh;
-  background-color: #121212;
-  color: #fff;
+  background-color: $bg-primary;
+  color: #e5e7eb;
 }
 
 nav {
   display: flex;
   padding: 10px;
-  background-color: #000;
+  background-color: $bg-dark;
   height: 10vh;
   /*border: 1px solid red;*/
   align-items: center;
   justify-content: space-between;
-
+  border-bottom: 1px solid grey;
 
   h1 {
     font-size: 20px;
@@ -36,9 +41,54 @@ nav {
     justify-content: center;
     
     h1 {
-      padding: 10px;
+      padding: 5px;
       font-size: 15px;
       opacity: 0.7;
+    }
+  }
+}
+
+form {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* border: 1px solid red; */
+  height: 35vh;
+  
+  label {
+    /* text-align: left; */
+    font-size: 15px;
+    opacity: 0.9;
+  }
+
+  input {
+    margin-bottom: 8px;
+    padding: 8px;
+    border-radius: 5px;
+    background-color: #1a1f2b;
+    /*border: 1px solid ; */
+    border: 1px solid #2e3140;
+    color: #fff;
+
+    &:hover {
+      border: 1px solid #2e3140;
+
+    }
+  }
+
+  button {
+    margin-top: 10px;
+    background-color: $accent;
+    border: none;
+    padding: 8px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+
+    &:hover {
+      background-color: #3b82f6;
     }
   }
 }
