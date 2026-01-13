@@ -100,4 +100,16 @@ form button:hover {
   color: #ef4444;
 }
 
+.lead-list {
+  background-color: #0b0f14;
+}
+.lead-list p {
+  color: #e5e7eb;
+  border-bottom: 0.25px solid #2a2f3a;
+  padding: 5px;
+}
+.lead-list p span {
+  opacity: 0.7;
+}
+
 /*# sourceMappingURL=output.css.map */

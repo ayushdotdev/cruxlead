@@ -120,3 +120,20 @@ form {
     color: #ef4444;
   }
 }
+
+.lead-list {
+  background-color: $bg-dark;
+  
+  p {
+    color: #e5e7eb;
+    border-bottom: 0.25px solid $border-clr;
+    padding: 5px;
+
+    span {
+      opacity: 0.7;
+    }
+  }
+
+}
+
+
