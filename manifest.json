@@ -1,0 +1,10 @@
+{
+  "name" : "CruxLead",
+  "description" : "A browser extension to quickly store and manage email leads without the need of switching apps",
+  "version" : "1.0.01",
+  "manifest_version" : "3",
+  "action" : {
+    "default_icon" : "static/images/icon.png",
+    "default_popup" : "index.html"
+  }
+}
