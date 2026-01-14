@@ -42,3 +42,21 @@ clearLeads.addEventListener("click", function(){
   localStorage.setItem("leads", JSON.stringify(leads))
   render(leads)
 })
+
+function exportToExcel(leads){
+  const data = [
+    ["Name", "E-mail"],
+    ...leads
+  ]
+  const worksheet = XLSX.utils.aoa_to_sheet(data)
+  const workbook = XLSX.utils.book_new()
+
+  XLSX.utils.book_append_sheet(workbook, worksheet, "Leads")
+
+  XLSX.writeFile(workbook, "leads.xlsx")
+}
+
+exportExcel.addEventListener("click", function () {
+  if (leads.length === 0) return
+  exportToExcel(leads)
+})
