@@ -7,12 +7,15 @@ const saveLead = document.getElementById("save-lead")
 const exportExcel = document.getElementById("export")
 const clearLeads = document.getElementById("clear")
 const leadList = document.getElementById("lead-list")
+const totalLeads = document.getElementById("total-leads")
+
 
 const storedLeads = JSON.parse( localStorage.getItem("leads") )
 
 if (storedLeads) {
   leads = storedLeads
   render(leads)
+  totalLeads.innerHTML = `${leads.length}`
 }
 
 function render(leads) {
@@ -25,6 +28,7 @@ function render(leads) {
     
   }
   leadList.innerHTML = items
+  totalLeads.innerHTML = `${leads.length}`
 }
 
 
