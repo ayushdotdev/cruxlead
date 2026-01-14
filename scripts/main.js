@@ -8,7 +8,7 @@ const exportExcel = document.getElementById("export")
 const clearLeads = document.getElementById("clear")
 const leadList = document.getElementById("lead-list")
 
-const storedLeads = JSON.parse( localStorage.getItem("Leads") )
+const storedLeads = JSON.parse( localStorage.getItem("leads") )
 
 if (storedLeads) {
   leads = storedLeads
@@ -35,4 +35,10 @@ saveLead.addEventListener("click", function(){
   localStorage.setItem("leads", JSON.stringify(leads))
   render(leads)
 
+})
+
+clearLeads.addEventListener("click", function(){
+  leads = []
+  localStorage.setItem("leads", JSON.stringify(leads))
+  render(leads)
 })
