@@ -1,4 +1,7 @@
-<img src="static/images/icon.png">
+<p align="center">
+  <img src="logo.png" width=350px />
+</p>
+
 
 # CruxLead
 
